@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תודה! אתם מועברים לרכישת המקרר</title>
+
+    <!-- Meta Pixel Code (Facebook Pixel) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '551748364313577'); 
+        fbq('track', 'Lead'); // שינוי ל-Lead במקום PageView
+        console.log("🚀 Facebook Pixel נטען בהצלחה! נשלח Lead!");
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=551748364313577&ev=Lead&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script>
+        // הפניה אוטומטית לאתר הרכישה עם טיימר
+        let countdown = 5; // זמן שניות לפני המעבר
+        function updateCountdown() {
+            document.getElementById("countdown").innerText = countdown;
+            countdown--;
+            if (countdown < 0) {
+                window.location.href = "https://s.click.aliexpress.com/e/_olMaHHC"; // עדכון הקישור
+            } else {
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(updateCountdown, 1000);
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('YOUR_IMAGE_URL_HERE') no-repeat center center fixed;
+            background-size: cover;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #333;
+        }
+        h2 {
+            font-size: 24px;
+            color: #666;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #0078D7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .countdown-box {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>תודה על ההתעניינות במקרר Alpicool!</h1>
+        <h2>אתם מועברים לאתר הרכישה...</h2>
+        <p>המעבר יתבצע בעוד <span class="countdown-box" id="countdown">5</span> שניות...</p>
+        <p>אם לא הועברת אוטומטית, <a href="https://s.click.aliexpress.com/e/_olMaHHC">לחץ כאן</a></p>
+    </div>
+</body>
+</html>
